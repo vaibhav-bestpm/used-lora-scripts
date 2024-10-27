@@ -51,7 +51,7 @@ def run_tag_editor():
 
 
 def launch():
-    log.info("Starting SD-Trainer Mikazuki GUI...")
+    log.info("vats...")
     log.info(f"Base directory: {base_dir_path()}, Working directory: {os.getcwd()}")
     log.info(f"{platform.system()} Python {platform.python_version()} {sys.executable}")
 
@@ -65,7 +65,7 @@ def launch():
         else:
             log.error("port finding fallback error")
 
-    log.info(f"SD-Trainer Version: {git_tag(base_dir_path())}")
+    log.info(f"vats Version: {git_tag(base_dir_path())}")
 
     os.environ["MIKAZUKI_HOST"] = args.host
     os.environ["MIKAZUKI_PORT"] = str(args.port)
